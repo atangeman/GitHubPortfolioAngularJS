@@ -10,6 +10,8 @@ BOOTSTRAP_VERS="3.3.7"
 
 MY_DIR=$(dirname $(readlink -f $0))
 
+TARGET_DIR="$1"
+
 # FUNCTIONS
 
 build() {
@@ -81,4 +83,4 @@ build() {
     curl -o ./assets/css/bootstrap.min.css https://maxcdn.bootstrapcdn.com/bootstrap/$BOOTSTRAP_VERS/css/bootstrap.min.css
 }
 
-build $d
+build "$TARGET_DIR"

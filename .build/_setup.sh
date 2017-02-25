@@ -26,7 +26,16 @@ mkdir ../assets/img
 mkdir ../assets/css
 mkdir ../assets/js
 mkdir ../assets/lib
+
+mkdir ../partials
+
+## make e2e-test dirs
+
 mkdir ../e2e-tests
+mkdir ../e2e-tests/specs
+ 
+cat _base.js > ../e2e-tests/specs/home.js
+cat _base.js > ../e2e-tests/specs/home.js
 
 # MAKE BASE FILES
 

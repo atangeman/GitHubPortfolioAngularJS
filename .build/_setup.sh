@@ -1,6 +1,9 @@
 #!bin\bash
 # A simple shell script to set up working directory to AngularJs standards
 # Andrew Tangeman 24/Feb/2017
+# For standards used see: https://github.com/mgechev/angularjs-style-guide
+#                         https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md
+#
 
 ANGULAR_VERS="1.6.2"
 BOOTSTRAP_VERS="3.3.7"

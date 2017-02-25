@@ -4,14 +4,34 @@
  */
 (function () {
 
-  "use strict";
+    "use strict";
 
-   function DefaultCtrl(dependency1, dependency2, dependencyn) {
+    angular
+        .module('app')
+        .controller('DefaultCtrl', DefaultCtrl);
 
-      // ...
+    DefaultCtrl.$inject = ['defaultService', 'logger'];
 
-   }
+    function DefaultCtrl(defaultService, logger) {
+        var vm = this;
+        vm.load = load;
+        vm.data = [];
+        vm.title = 'Default';
 
-   module.controller('DefaultCtrl', DefaultCtrl);
+        activate();
+
+        function activate() {
+            return getData().then(function() {
+                logger.info('Activated Default View');
+            });
+        }
+
+        function getData() {
+            return defaultService.getData().then(function(data) {
+                vm.data = data;
+                return vm.data;
+            });
+        }
+    }
 
 })();

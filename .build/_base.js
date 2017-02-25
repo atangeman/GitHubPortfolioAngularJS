@@ -4,8 +4,8 @@
  */
 (function () {
 
-  "use strict";
+    "use strict";
 
-   // ...js code
+    // ...js code
 
 })();

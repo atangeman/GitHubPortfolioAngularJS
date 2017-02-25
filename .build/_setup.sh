@@ -46,16 +46,16 @@ cat $MY_DIR/_base.js > ./e2e-tests/specs/home.js
 
 cat $MY_DIR/_base.js > ./app/app.js
 cat $MY_DIR/_index.html > ./index.html
-cat $MY_DIR/_basectrl.js > ./app/home/controllers/DefaultCtrl.js
-cat $MY_DIR/_base.js > ./app/home/controllers/DefaultCtrl.spec.js
+cat $MY_DIR/_basectrl.js > ./app/home/controllers/defaultController.js
+cat $MY_DIR/_base.js > ./app/home/controllers/defaultController.spec.js
 cat $MY_DIR/_base.js > ./app/home/directives/defaultDirective.html
-cat $MY_DIR/_base.js > ./app/home/directives/defaultDirective.js
+cat $MY_DIR/_basedirective.js > ./app/home/directives/defaultDirective.js
 cat $MY_DIR/_base.js > ./app/home/directives/defaultDirective.spec.js
 cat $MY_DIR/_base.js > ./app/home/directives/defaultDirective.css
 cat $MY_DIR/_base.js > ./app/home/filers/defaultFilter.js
 cat $MY_DIR/_base.js > ./app/home/filters/defaultFilter.spec.js
-cat $MY_DIR/_base.js > ./app/home/services/DefaultService.js
-cat $MY_DIR/_base.js > ./app/home/services/DefaultService.spec.js
+cat $MY_DIR/_baseservice.js > ./app/home/services/defaultService.js
+cat $MY_DIR/_base.js > ./app/home/services/defaultService.spec.js
 
 
 # GET ANGULAR LIBS

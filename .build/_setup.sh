@@ -41,16 +41,16 @@ cat _base.js > ../e2e-tests/specs/home.js
 
 cat _base.js > ../app/app.js
 cat _index.html > ../index.html
-cat _base.js > ../app/home/controllers/FirstCtrl.js
-cat _base.js > ../app/home/controllers/FirstCtrl.spec.js
-cat _base.js > ../app/home/directives/mainDirective.html
-cat _base.js > ../app/home/directives/mainDirective.js
-cat _base.js > ../app/home/directives/mainDirective.spec.js
-cat _base.js > ../app/home/directives/mainDirective.css
-cat _base.js > ../app/home/filers/mainFilter.js
-cat _base.js > ../app/home/filters/mainFilter.spec.js
-cat _base.js > ../app/home/services/MainService.js
-cat _base.js > ../app/home/services/MainService.spec.js
+cat _basectrl.js > ../app/home/controllers/DefaultCtrl.js
+cat _base.js > ../app/home/controllers/DefaultCtrl.spec.js
+cat _base.js > ../app/home/directives/defaultDirective.html
+cat _base.js > ../app/home/directives/defaultDirective.js
+cat _base.js > ../app/home/directives/defaultDirective.spec.js
+cat _base.js > ../app/home/directives/defaultDirective.css
+cat _base.js > ../app/home/filers/defaultFilter.js
+cat _base.js > ../app/home/filters/defaultFilter.spec.js
+cat _base.js > ../app/home/services/DefaultService.js
+cat _base.js > ../app/home/services/DefaultService.spec.js
 
 
 # GET ANGULAR LIBS

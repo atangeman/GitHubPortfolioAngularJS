@@ -6,6 +6,6 @@
 
   "use strict";
 
-  // All the JavaScript for this file.
+   // ...js code
 
 })();

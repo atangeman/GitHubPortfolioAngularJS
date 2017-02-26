@@ -1,11 +1,10 @@
-
 /**
  * @file
  */
 (function () {
-
     "use strict";
-
-    // ...js code
-
+    // sidebar logic
+    angular.module('app', [
+        require('angular-sidebar')
+    ]);
 })();

@@ -8,28 +8,31 @@
 
     angular
         .module('app')
-        .controller('DefaultCtrl', DefaultCtrl);
+        .controller('RepoController', RepoController);
 
-    DefaultCtrl.$inject = ['defaultService', 'logger'];
+    RepoController.$inject = ['repoService'/*, 'logger'*/];
 
-    function DefaultCtrl(defaultService, logger) {
+    function RepoController(repoService/*, logger*/) {
         var vm = this;
-        vm.load = load;
-        vm.data = [];
-        vm.title = 'Default';
-
+        vm.activate = activate;
+        vm.repos = [];
+        vm.title = 'Repos';
+        vm.apiURL = 'https://api.github.com';
+        vm.repoURL = '/users/atangeman/repos';
+        
         activate();
 
         function activate() {
-            return getData().then(function() {
-                logger.info('Activated Default View');
+            var url = vm.apiURL + vm.repoURL
+            return getRepos(url).then(function() {
+                console.log("activate");
             });
         }
 
-        function getData() {
-            return defaultService.getData().then(function(data) {
-                vm.data = data;
-                return vm.data;
+        function getRepos(url) {
+            return repoService.getRepos(url).then(function(data) {
+                vm.repos = data;
+                return vm.repos;
             });
         }
     }

@@ -5,24 +5,22 @@
     "use strict";
     
     angular
-        .module('app.core')
-        .factory('githubService', githubService);
+        .module('app')
+        .factory('repoService', repoService);
     
-    githubService.$inject = ['$http', 'logger'];
-
-    function githubService($http, logger) {
+    repoService.$inject = ['$http'];
+    
+    function repoService($http) {
         var service = {
-            apiURL: 'https://api.github.com',
-            repoURL: '/users/atangeman/repos',
             getRepos: getRepos,
             repos: []
          };
         return service;
         /////////////
         function getRepos(url) {
-            return $http.get(url)
-                .then(getAvengersComplete)
-                .catch(getAvengersFailed);
+            return $http.get('https://api.github.com/users/atangeman/repos')
+                .then(getReposComplete)
+                .catch(getReposFailed);
 
             function getReposComplete(response) {
                 return response.data.results;

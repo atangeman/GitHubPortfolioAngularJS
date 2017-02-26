@@ -14,7 +14,7 @@
 
     function DefaultCtrl(defaultService, logger) {
         var vm = this;
-        vm.load = load;
+        vm.activate = activate;
         vm.data = [];
         vm.title = 'Default';
 

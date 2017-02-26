@@ -25,7 +25,7 @@
         function activate() {
             var url = vm.apiURL + vm.repoURL
             return getRepos(url).then(function() {
-                console.log("activate");
+                                console.log(vm.repos);
             });
         }
 

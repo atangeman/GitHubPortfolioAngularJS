@@ -11,11 +11,9 @@
     repoService.$inject = ['$http'];
     
     function repoService($http) {
-        var service = {
-            getRepos: getRepos,
-            repos: []
+        return {
+            getRepos: getRepos
          };
-        return service;
         /////////////
         function getRepos(url) {
             return $http.get('https://api.github.com/users/atangeman/repos')
@@ -23,7 +21,7 @@
                 .catch(getReposFailed);
 
             function getReposComplete(response) {
-                return response.data.results;
+                return response.data;
             }
 
             function getReposFailed(error) {

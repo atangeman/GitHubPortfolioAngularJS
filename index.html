@@ -15,7 +15,6 @@
             <!-- Sidebar -->
             <div ng-controller="RepoController as vm">
                 <div id="sidebar-wrapper">
-                                     I have {{vm.repos.length}} repos. 
                     <ul class="sidebar-nav">
                         <li class="animate-repeat" ng-repeat="repo in vm.repos as results">  <a href="#">{{repo.name}}</a> </li>
                     </ul>

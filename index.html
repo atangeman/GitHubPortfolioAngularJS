@@ -13,14 +13,19 @@
 
 <body>
     <div ng-app="app">
+       <div class="wrapper-head">
+           <label class="wrapper-head-title">
+           Andy Tangeman ~ Portfolio of Work</label>
+        </div>
+        <hr class="half-rule"/>
         <div id="wrapper">
             <!-- Sidebar -->
             <div ng-controller="RepoController as vm">
                 <div id="sidebar-wrapper">
-                    <ul class="sidebar-nav">
+                    <uWorkWorkl class="sidebar-nav">
                       <li class="sidebar-brand">
                         <a href="#">
-                            Portfolio
+                           Code
                         </a>
                     </li>
                         <div>
@@ -42,6 +47,7 @@
                     </div>
                 </div>
             </div>
+            
             <!-- /#page-content-wrapper -->
         </div>
     </div>
@@ -49,6 +55,7 @@
     <script src="app/app.js"></script>
     <script src="app/common/controllers/RepoController.js"></script>
     <script src="app/common/services/repoService.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </body>
 
 </html>

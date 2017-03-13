@@ -3,8 +3,8 @@ body {
     margin: 0;
     padding-bottom: 6rem;
     min-height: 100%;
-    font-family: 'Open Sans', sans-serif;
     font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #7f8c8d;
 }
 
 a {
@@ -14,25 +14,37 @@ a {
 
 h1 {
     font-family: 'Raleway', sans-serif;
-    font-weight: 200;
+    font-weight: 100;
     letter-spacing: 0.05em;
     font-size: 51.2px;
     line-height: 81.92px;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.5px;
+    color: #34495e;
 }
 
-h2,
-h3,
-h4,
-h5,
+h2 {
+        font-family: 'Raleway', sans-serif;
+        color: #34495e;
+}
+h3 {
+            font-family: 'Raleway', sans-serif;
+        color: #34495e;
+}
+h4 {
+            font-family: 'Raleway', sans-serif;
+        color: #34495e;
+}
+h5 {
+        font-family: 'Raleway', sans-serif;
+}
 h6 {
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
-    color: rgb(75, 75, 75);
+    color: #7f8c8d;
 }
 
 .header {
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Raleway', sans-serif;
     max-width: 768px;
     margin: 0 auto;
     padding: 1em;
@@ -47,7 +59,6 @@ h6 {
 .wrapper-head {
     z-index: 5000;
     min-width: 100%;
-    background: #FFF; /*rgb(122,125,155);*/
     min-height: 50px;
     display: block;
     position: relative;
@@ -60,12 +71,12 @@ h6 {
     margin-left: 0;
     margin-top: auto;
     text-align: left;
-    width: 100%;
+    width: 800px;
     position: inherit;
  }
 
 .wrapper-head-title {
-    color: rgb(190,190,250);  
+    color: #7f8c8d;
     font-weight: lighter;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -82,11 +93,14 @@ h6 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
     letter-spacing: 0.01em;
-    color: #777;
+    color: #95a5a6;
 }
 
-.footer {
-    position: absolute;
+footer {
+    z-index: 3000;
+    position: fixed;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
     padding-bottom: 40px;
     padding-top: 40px;
     margin-top: 40px;
@@ -101,7 +115,8 @@ h6 {
     bottom: 0;
     left: 0;
     padding: .5rem;
-    background-color: #efefef;
+    background-color: #FFF;
+   /* background-color: #ECEFF1;*/
     text-align: center;
 }
 

@@ -13,16 +13,16 @@
 
 <body>
     <div ng-app="app">
+        <!--
        <div class="wrapper-head">
            <label class="wrapper-head-title">
            Andy Tangeman ~ Portfolio of Work</label>
-        </div>
-        <hr class="half-rule"/>
+        </div>-->
         <div id="wrapper">
             <!-- Sidebar -->
             <div ng-controller="RepoController as vm">
                 <div id="sidebar-wrapper">
-                    <uWorkWorkl class="sidebar-nav">
+                    <ul class="sidebar-nav">
                       <li class="sidebar-brand">
                         <a href="#">
                            Code
@@ -38,6 +38,7 @@
             <!-- /#sidebar-wrapper -->
             <!-- Page Content -->
             <div id="page-content-wrapper">
+                
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
@@ -47,11 +48,18 @@
                     </div>
                 </div>
             </div>
-            
+            <hr class="half-rule"/>
             <!-- /#page-content-wrapper -->
         </div>
     </div>
+    <footer>
+        andy tangeman (2015) ~ portfolio of work
+        <br/>
+        built from scratch with angularJs
+    </footer>
     <script src="assets/lib/angular.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.js"></script>
+
     <script src="app/app.js"></script>
     <script src="app/common/controllers/RepoController.js"></script>
     <script src="app/common/services/repoService.js"></script>

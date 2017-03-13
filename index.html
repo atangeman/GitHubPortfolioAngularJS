@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8">
     <title>MyApp</title>
-    <link rel="stylesheet" href="assets/pure-release-0.6.2/pure-min.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans:300|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/simple-sidebar.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -13,6 +12,9 @@
 
 <body>
     <div ng-app="app">
+        <div ng-controller="P5Controller as vm">
+            p5
+        </div>
         <!--
        <div class="wrapper-head">
            <label class="wrapper-head-title">
@@ -29,7 +31,7 @@
                         </a>
                     </li>
                         <div>
-                     <li class="h1" {{vm.repos.length}} repos.></li>
+                     <li class="h1"></li>
                         <li class="animate-repeat" ng-repeat="repo in vm.repos as results">  <a href="#">{{repo.name}}</a> </li>
                             </div>
                     </ul>
@@ -38,15 +40,14 @@
             <!-- /#sidebar-wrapper -->
             <!-- Page Content -->
             <div id="page-content-wrapper">
-                
-                <div class="container-fluid">
+              <!--   <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
                             <h1>Simple Sidebar</h1>
                             <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
                             <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p> <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a> </div>
                     </div>
-                </div>
+                </div>-->
             </div>
             <hr class="half-rule"/>
             <!-- /#page-content-wrapper -->
@@ -57,13 +58,15 @@
         <br/>
         built from scratch with angularJs
     </footer>
-    <script src="assets/lib/angular.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
+    <script src="assets/lib/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.min.js"></script>
     <script src="app/app.js"></script>
     <script src="app/common/controllers/RepoController.js"></script>
+    <script src="app/common/controllers/P5Controller.js"></script>
     <script src="app/common/services/repoService.js"></script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="app/common/services/p5Service.js"></script>
 </body>
 
 </html>

@@ -19,7 +19,7 @@
         activate();
         
         function activate() {
-            return p5Service(this);
+            return p5Service.createSketch(this);
         }
     }
 

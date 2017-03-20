@@ -17,7 +17,9 @@
            <label class="wrapper-head-title">
            Andy Tangeman ~ Portfolio of Work</label>
         </div>-->
-        <div data-ng-controller="P5Controller as vm" class="p5-content"> {{vm.sketch;}} </div>
+        <div ng-controller="P5Controller as vm" class="p5-content">
+           {{vm.sketch}}
+        </div>
         <div id="wrapper">
             <!-- Sidebar -->
             <div id="sidebar-wrapper">
@@ -27,13 +29,15 @@
                     <li class="sidebar-brand"> 
                         <a href="#">Code</a> 
                     </li>
+                    <!--
                     <div ng-controller="RepoController as vm">
                         <li class="h1"></li>
                         <li class="animate-repeat" ng-repeat="repo in vm.repos as results"> <a href="#">{{repo.name}}</a> </li>
-                    </div>
+                    </div>-->
                 </ul>
             </div>
         </div>
+        
         <!-- /#sidebar-wrapper -->
         <!-- Page Content -->
         <!--  <div id="page-content-wrapper">

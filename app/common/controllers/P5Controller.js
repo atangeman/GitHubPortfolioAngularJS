@@ -12,13 +12,12 @@
         var repos = {};
         vm.apiURL = 'https://api.github.com';
         vm.repoURL = '/users/atangeman/repos';
-        vm.getRepos = getRepos;
-        vm.sketch = p5Service(this);
         
         activate();     
         
         function activate() {
             var url = vm.apiURL + vm.repoURL;
+            return p5Service(this);
         }
 
         function getRepos(url) {

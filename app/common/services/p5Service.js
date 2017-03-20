@@ -4,10 +4,11 @@
 (function () {
     "use strict";
     angular.module('app').service('p5Service', p5Service);
-    p5Service.$inject = ['$window', 'repoService'];
+    p5Service.$inject = ['$window'];
 
-    function p5Service(sketch, repoService, $window) {
+    function p5Service(sketch, data, $window) {
         return function ($window) {
+            console.log("init");
             var posX = 594;
             var posX1 = 394;
             var posY;
@@ -23,7 +24,7 @@
             var Canvas;
             var c;
             var img;
-            var repos;// = data;
+            var repos = data;// = data;
             /*
             for(var i = 0; i < repoObj.length; ++i) {
                 repoObj[i].posX = (w / 2) + (spacing * (i-1));

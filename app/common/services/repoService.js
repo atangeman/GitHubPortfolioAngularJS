@@ -13,7 +13,7 @@
         };
         /////////////
         function getRepos(url) {
-            return $http.get('https://api.github.com/users/atangeman/repos?access_token=c6e54af38dccdef074ee0cfa3562dc2f3d9f2f97').then(getReposComplete).catch(getReposFailed);
+            return $http.get('https://api.github.com/users/atangeman/repos').then(getReposComplete).catch(getReposFailed);
 
             function getReposComplete(response) {
                 return response.data;
@@ -25,7 +25,7 @@
         }
 
         function getReposByLanguage(url) {
-            return $http.get('https://api.github.com/users/atangeman/repos?access_token=c6e54af38dccdef074ee0cfa3562dc2f3d9f2f97').then(getReposComplete).catch(getReposFailed);
+            return $http.get('https://api.github.com/users/atangeman/repos').then(getReposComplete).catch(getReposFailed);
 
             function getReposComplete(response) {
                 var data = response.data;

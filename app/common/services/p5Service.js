@@ -6,9 +6,9 @@
     angular.module('app').service('p5Service', p5Service);
     p5Service.$inject = ['$window'];
 
-    function p5Service(sketch, data, $window) {
-        return function ($window) {
-            console.log("init");
+    function p5Service(sketch, $window) {
+        return function (data, $window) {
+            var repos = data;
             var posX = 594;
             var posX1 = 394;
             var posY;
@@ -24,7 +24,6 @@
             var Canvas;
             var c;
             var img;
-            var repos = data;// = data;
             /*
             for(var i = 0; i < repoObj.length; ++i) {
                 repoObj[i].posX = (w / 2) + (spacing * (i-1));
@@ -34,6 +33,7 @@
             };
             
             sketch.setup = function () {
+                console.log(data);
                 img.loadPixels();
                 w = windowWidth;
                 h = windowHeight;
@@ -100,13 +100,13 @@
                 pArray.push(p3);
                 pArray.push(p4);
                 pArray.push(p5);
-                console.log(repos);
             };
             sketch.draw = function () {
                 sketch.background(c);
                 sketch.image(img, 0, 0, windowWidth, windowHeight);
                 sketch.drawGrid();
                 sketch.nodeDisplay(pArray);
+                
             };
             sketch.drawGrid = function () {
                 sketch.fill(83, 76, 100, 100);

@@ -7,9 +7,10 @@ angular
 
 function config($routeProvider) {
     $routeProvider
-        .when('/avengers', {
-            templateUrl: 'avengers.html',
-            controller: 'Avengers',
-            controllerAs: 'vm'
+        .when('/', {
+        /*
+            templateUrl: 'app/common/viewP5Js.html',
+            controller: 'P5Controller',
+            controllerAs: 'vm'*/
         });
 }

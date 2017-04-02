@@ -35,7 +35,9 @@
                 </ul>
             </div>
         </div>
+
         <div ng-controller="P5Controller as vm" class="p5-content">
+            {{vm.p5}}
         </div>
         <!-- /#sidebar-wrapper -->
         <!-- Page Content -->
@@ -61,10 +63,11 @@
         });
     </script>
     <script src="assets/lib/angular.js"></script>
+    <script src="assets/lib/angular-route.js"></script>
     <script src="app/app.js"></script>
-    <script src="app/common/controllers/RepoController.js"></script>
+    <script src="app/common/route-config.js"></script>
+        <script src="app/common/services/repoService.js"></script>
     <script src="app/common/controllers/P5Controller.js"></script>
-    <script src="app/common/services/repoService.js"></script>
     <script src="app/common/services/p5Service.js"></script>
 </body>
 

@@ -8,7 +8,7 @@
 
     function repoService($http) {
         return {
-            getRepos: getRepos
+              getRepos: getRepos
             , getReposByLanguage: getReposByLanguage
         };
         /////////////
